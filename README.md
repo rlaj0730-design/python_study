@@ -116,3 +116,50 @@
    * **산점도 (`plt.scatter()`)**: 두 변수 간의 상관관계 및 분포 확인
 3. **다중 그래프 표현 (Subplot)**
    * **`plt.subplots()`**: 하나의 창에 여러 개의 그래프를 분할하여 배치하고 비교 분석 수행
+   ---
+
+## 💻 4. HTML/CSS 학습 일지 (Study Log)
+
+웹 페이지의 뼈대를 구성하는 구조 설계 언어인 HTML과 디자인 및 스타일을 입히는 CSS의 핵심 기능을 단계별로 학습하며 정리한 기록입니다.
+
+### 📅 1. HTML 학습 목차 및 내용 SUMMARY
+
+| 순서 | 주제 | 파일명 (.html) | 주요 학습 내용 |
+| :---: | :--- | :--- | :--- |
+| 01 | HTML 기본 구조 | `ex01_basic.html` | • HTML 문서 기본 틀 (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)<br>• 기본 태그 (제목 `<h1>~<h6>`, 단락 `<p>`, 줄바꿈 `<br>`, 수평선 `<hr>`) |
+| 02 | 텍스트 및 링크 태그 | `ex02_text_link.html` | • 텍스트 강조 (`<strong>`, `<em>`)<br>• 하이퍼링크 (`<a>`) 및 이미지 삽입 (`<img>`) |
+| 03 | 목록 및 테이블 태그 | `ex03_list_table.html` | • 순서 없는 목록 (`<ul>`), 순서 있는 목록 (`<ol>`), 항목 (`<li>`)<br>• 표 생성 태그 (`<table>`, `<tr>`, `<th>`, `<td>`) 및 셀 병합 |
+| 04 | 입력 폼 및 시맨틱 태그 | `ex04_form_semantic.html` | • 사용자 입력 폼 (`<form>`, `<input>`, `<textarea>`, `<button>`)<br>• 시맨틱 웹 태그 (`<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`) |
+
+---
+
+### 💡 HTML 주요 개념 정리
+
+1. **HTML 기본 구조**
+   * **태그(Tag) 구조** : 콘텐츠를 감싸서 웹 브라우저가 구조를 이해할 수 있도록 마크업하는 방식 (`<태그명>내용</태그명>`)
+   * **시맨틱 웹(Semantic Web)** : 의미론적 태그를 사용하여 웹 페이지의 구조와 목적을 명확히 전달하는 설계 방식
+2. **핵심 태그 활용**
+   * **링크와 이미지** : `<a>` 태그의 `href` 속성으로 페이지 이동, `<img>` 태그의 `src`와 `alt` 속성으로 이미지 및 대체 텍스트 지정
+   * **폼(Form)** : 사용자의 입력을 받아 서버로 데이터를 전송하는 인터페이스 구성
+
+---
+
+### 📅 2. CSS 학습 목차 및 내용 SUMMARY
+
+| 순서 | 주제 | 파일명 (.css / .html) | 주요 학습 내용 |
+| :---: | :--- | :--- | :--- |
+| 01 | CSS 기본 및 선택자 | `ex01_selector.html` | • CSS 적용 방식 (Inline, Internal, External)<br>• 기본 선택자 (전체, 태그, 아이디 `#`, 클래스 `.`) |
+| 02 | 박스 모델 (Box Model) | `ex02_boxmodel.html` | • 요소의 4가지 영역 (Content, Padding, Border, Margin)<br>• `box-sizing` 속성 (`border-box` 활용법) |
+| 03 | 레이아웃 및 배치 | `ex03_layout.html` | • 화면 배치 속성 (`display: block, inline, none`)<br>• Flexbox 모델 (`display: flex`, `justify-content`, `align-items`) |
+| 04 | 디자인 및 반응형 | `ex04_responsive.html` | • 폰트, 색상, 배경 설정<br>• 미디어 쿼리(`@media`)를 활용한 반응형 웹 디자인 기초 |
+
+---
+
+### 💡 CSS 주요 개념 정리
+
+1. **선택자 (Selectors)**
+   * **클래스(`.`) vs 아이디(`#`)** : 클래스는 중복 사용 가능하며 여러 개 지정 가능, 아이디는 페이지 내 고유한 단 하나의 요소에만 지정
+2. **박스 모델 (Box Model)**
+   * 모든 HTML 요소를 사각형 박스로 간주하며, 안쪽 여백(`padding`), 테두리(`border`), 바깥쪽 여백(`margin`)으로 구성
+3. **Flexbox 레이아웃**
+   * 행과 열 방향으로 요소를 유연하게 정렬하고 간격을 제어할 수 있는 현대적인 레이아웃 시스템 (`justify-content`로 수평 정렬, `align-items`로 수직 정렬)
