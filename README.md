@@ -16,7 +16,7 @@
 | **06** | **딕셔너리** | `ex06_딕셔너리.ipynb` | • Key-Value 구조의 데이터 관리<br>• keys(), values(), items() 활용 |
 | **07** | **함수** | `ex07_함수.ipynb` | • 사용자 정의 함수 (def) 및 반환값 (return)<br>• 매개변수 (*args, **kwargs) 및 Lambda 표현식 |
 
----
+<hr>
 
 ## 💡 주요 개념 정리
 
@@ -47,7 +47,7 @@
    - **매개변수 (`*args`, `**kwargs`)** : 가변 인수를 받아 다양한 개수를 처리 가능
    - **람다 표현식 (`lambda`)** : 이름 없는 익명 함수를 간결하게 한 줄로 작성할 때 사용
 
----
+<hr>
 
 ## 📊 주요 데이터 구조 비교 (Data Structures)
 
@@ -73,7 +73,7 @@
 | **04** | **인덱싱 & 슬라이싱** | `ex04_인덱싱_슬라이싱.ipynb` | • 다차원 인덱싱 (`arr[행, 열]`) 및 슬라이싱 (`arr[행범위, 열범위]`)<br>• 조건식 기반 데이터 필터링 (Boolean Indexing) |
 | **05** | **데이터 분석 실습** | `ex05_numpy_실습.ipynb` | • BMI 지수 일괄 계산 실습 (단위 변환 및 공식 적용)<br>• 영화 평점 데이터 분석 (`np.loadtxt`, `np.unique`, 평점 필터링) |
 
----
+<hr>
 
 ## 💡 NumPy 주요 개념 정리
 
@@ -107,7 +107,7 @@
 | **04** | **그룹화 & 집계 연산** | `ex04_그룹화_연산.ipynb` | • `groupby()`를 이용한 데이터 그룹화<br>• 집계 함수 적용 (`mean`, `sum`, `count`, `agg`) |
 | **05** | **파일 입출력 & 실습** | `ex05_pandas_실습.ipynb` | • CSV, Excel 파일 읽기 및 쓰기 (`read_csv`, `to_csv`)<br>• 실제 공공 데이터 전처리 및 분석 종합 실습 |
 
----
+<hr>
 
 ## 💡 Pandas 주요 개념 정리
 
@@ -139,7 +139,7 @@
 | **02** | **다양한 차트 시각화** | `ex02_차트_종류.ipynb` | • 산점도(`scatter`), 막대 그래프(`bar`), 히스토그램(`hist`) 작성<br>• 데이터 특성에 맞는 적절한 시각화 기법 선택 |
 | **03** | **스타일 및 서브플롯** | `ex03_스타일_서브플롯.ipynb` | • 선 스타일, 마커, 색상(`color`, `linestyle`, `marker`) 커스텀<br>• `plt.subplots()`를 활용한 다중 그래프(Subplot) 배치 및 관리 |
 
----
+<hr>
 
 ## 💡 Matplotlib 주요 개념 정리
 
@@ -171,7 +171,7 @@
 | **03** | **목록 및 테이블 태그** | `ex03_list_table.html` | • 순서 없는 목록 (`<ul>`), 순서 있는 목록 (`<ol>`), 항목 (`<li>`)<br>• 표 생성 태그 (`<table>`, `<tr>`, `<th>`, `<td>`) 및 셀 병합 |
 | **04** | **입력 폼 및 시맨틱 태그** | `ex04_form_semantic.html` | • 사용자 입력 폼 (`<form>`, `<input>`, `<textarea>`, `<button>`)<br>• 시맨틱 웹 태그 (`<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`) |
 
----
+<hr>
 
 ## 💡 HTML 주요 개념 정리
 
@@ -194,7 +194,7 @@
 | **03** | **레이아웃 및 배치** | `ex03_layout.html` | • 화면 배치 속성 (`display: block, inline, none`)<br>• Flexbox 모델 (`display: flex`, `justify-content`, `align-items`) |
 | **04** | **디자인 및 반응형** | `ex04_responsive.html` | • 폰트, 색상, 배경 설정<br>• 미디어 쿼리(`@media`)를 활용한 반응형 웹 디자인 기초 |
 
----
+<hr>
 
 ## 💡 CSS 주요 개념 정리
 
@@ -233,7 +233,7 @@
 | **12** | **이벤트 (Events)** | `ex12_event.html` | • 마우스, 키보드, 폼 등 다양한 사용자 이벤트 리스너 (`addEventListener`) 등록<br>• 이벤트 객체(`event`) 활용 및 이벤트 전파(Bubbling & Capturing) 제어 |
 | **13** | **데이터 통신 (Async/Fetch)** | `ex13_async_fetch.html` | • 비동기 통신(Async/Await, Promise) 개념 이해<br>• `fetch()` API를 활용한 외부 서버 데이터(JSON) 비동기 요청 및 응답 처리 |
 
----
+<hr>
 
 ## 💡 주요 개념 정리
 
@@ -297,7 +297,7 @@
 | **03** | **GET 방식 데이터 통신** | `ex03_get_login.py`<br>`login.html` | • URL에 데이터를 탑재하는 GET 방식 이해<br>• `request.args.get()`을 통한 데이터 추출 |
 | **04** | **POST 방식 데이터 통신** | `ex04_post_login.py`<br>`login.html` | • HTTP Body에 데이터를 숨겨 전송하는 POST 방식 이해<br>• `request.form.get()`을 통한 데이터 추출 |
 
----
+<hr>
 
 ## 💡 주요 개념 정리
 
@@ -314,7 +314,7 @@
    - **GET 방식** : 데이터를 URL 뒤에 쿼리 스트링(`?id=smhrd&pw=1234`) 형태로 탑재하여 전송하며, `request.args.get('key')`로 추출
    - **POST 방식** : 데이터를 HTTP 메시지 Body에 숨겨서 전송하므로 보안과 대용량 전송에 적합하며, `request.form.get('key')`로 추출
 
----
+<hr>
 
 ## 🔍 웹 통신의 기초 흐름
 
