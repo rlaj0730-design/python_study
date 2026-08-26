@@ -236,3 +236,35 @@
 12. **데이터 통신 (Async/Fetch)**
 * • **fetch() API**: 프론트엔드에서 서버와 HTTP 요청을 주고받기 위한 현대적인 자바스크립트 내장 함수
 * • **async / await**: 콜백 지옥을 해결하고 동기 코드처럼 직관적으로 서버로부터 데이터를 받아와(JSON 파싱) 웹 화면을 비동기 처리
+
+# 🐍 Flask 웹 서버 학습 일지 (Study Log)
+
+파이썬 기반의 Flask 웹 서버를 구축하고, 클라이언트와 서버 간의 데이터 통신(GET/POST) 원리를 학습하며 정리한 기록입니다.
+
+---
+
+## 📅 학습 목차 및 내용 SUMMARY
+
+| 순서 | 주제 | 파일명 (.py / .html) | 주요 학습 내용 |
+| :---: | :--- | :--- | :--- |
+| **01** | **Flask 서버 기초** | `ex01_flask_basic.py`<br>`templates/` / `static/` | • Flask 서버 설계도 호출 및 기본 구조 작성<br>• 정적 파일 및 템플릿 파일 관리 폴더 세팅 |
+| **02** | **라우팅 및 HTML 응답** | `ex02_route_html.py`<br>`index.html` / `sub.html` | • 여러 개의 라우트(`/`, `/sub`) 경로 설정<br>• `render_template`을 활용한 HTML 문서 응답 |
+| **03** | **GET 방식 데이터 통신** | `ex03_get_login.py`<br>`login.html` | • URL에 데이터를 탑재하는 GET 방식 이해<br>• `request.args.get()`을 통한 데이터 추출 |
+| **04** | **POST 방식 데이터 통신** | `ex04_post_login.py`<br>`login.html` | • HTTP Body에 데이터를 숨겨 전송하는 POST 방식 이해<br>• `request.form.get()`을 통한 데이터 추출 |
+
+---
+
+## 💡 주요 개념 정리
+
+1. **Flask 서버 기본 구조**
+   - **서버 설계도 호출** : `app = Flask(__name__)`을 통해 현재 파일을 기준으로 서버 인스턴스를 생성
+   - **라우트(Route) 설정** : `@app.route()`를 사용하여 사용자가 요청한 경로에 따라 적절한 함수와 응답을 매핑
+   - **서버 실행** : `app.run(host='localhost', port=5000)`을 통해 로컬 환경에서 서버를 구동 (포트 5000번 관습적 사용)
+
+2. **폴더 구조 및 파일 관리**
+   - **`templates/` 폴더** : `render_template()` 함수가 자동으로 탐색하여 HTML 페이지를 렌더링하는 디렉토리
+   - **`static/` 폴더** : 이미지, CSS, JS 등의 정적(Static) 파일들을 관리하는 디렉토리
+
+3. **데이터 통신 방식 (GET vs POST)**
+   - **GET 방식** : 데이터를 URL 뒤에 쿼리 스트링(`?id=smhrd&pw=1234`) 형태로 탑재하여 전송하며, `request.args.get('key')`로 추출
+   - **POST 방식** : 데이터를 HTTP 메시지 Body에 숨겨서 전송하므로 보안과 대용량 전송에 적합하며, `request.form.get('key')`로 추출
